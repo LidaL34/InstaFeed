@@ -15,6 +15,7 @@ class HeadBar extends HTMLElement {
     render(){
         if(this.shadowRoot){
             this.shadowRoot.innerHTML = `
+
             <link href="./app/components/Interface.css" rel="stylesheet">
             <header>
             <div class="container">
@@ -34,6 +35,9 @@ class HeadBar extends HTMLElement {
     
             </div>
         </header>
+
+        <section class="storieBar"></section>
+        
                `;
        }  
     }

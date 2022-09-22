@@ -1,19 +1,19 @@
 export enum Info {
-    'pp' = 'pp' ,
+    'minipp' = 'minipp' ,
     'username' = 'username',
     'name' = 'name',
     'followed' = 'followed'
 }
 
 class Suggestions extends HTMLElement {
-    pp?: string;
+    minipp?: string;
     username?: string;
     name?: string;
     followed?: string;
 
     static get observedAttributes() {
         const attrs: Record <Info,null> = {
-            pp: null,
+            minipp: null,
             username: null,
             name: null,
             followed: null
@@ -45,18 +45,8 @@ class Suggestions extends HTMLElement {
 
                 <section class="suggestions">
 
-                    <div class="profile">
-                        <img src="${this.pp}" alt="Pp">
-                        <h1>${this.username}</h1>
-                        <br>
-                        <p>${this.name}</p>
-
-                        <h2>Suggestions For You</h2>
-
-                    </div>
-
                     <div class="profiles">
-                        <img src="${this.pp}" alt="PSuggestion">
+                        <img src="${this.minipp}" alt="Suggestion">
                         <p><b>${this.username}</b></p>
                         <p>${this.followed}</p>
                     </div>

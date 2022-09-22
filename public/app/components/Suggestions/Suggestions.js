@@ -1,6 +1,6 @@
 export var Info;
 (function (Info) {
-    Info["pp"] = "pp";
+    Info["minipp"] = "minipp";
     Info["username"] = "username";
     Info["name"] = "name";
     Info["followed"] = "followed";
@@ -12,7 +12,7 @@ class Suggestions extends HTMLElement {
     }
     static get observedAttributes() {
         const attrs = {
-            pp: null,
+            minipp: null,
             username: null,
             name: null,
             followed: null
@@ -36,18 +36,8 @@ class Suggestions extends HTMLElement {
 
                 <section class="suggestions">
 
-                    <div class="profile">
-                        <img src="${this.pp}" alt="Pp">
-                        <h1>${this.username}</h1>
-                        <br>
-                        <p>${this.name}</p>
-
-                        <h2>Suggestions For You</h2>
-
-                    </div>
-
                     <div class="profiles">
-                        <img src="${this.pp}" alt="PSuggestion">
+                        <img src="${this.minipp}" alt="Suggestion">
                         <p><b>${this.username}</b></p>
                         <p>${this.followed}</p>
                     </div>

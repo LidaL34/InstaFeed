@@ -30,7 +30,7 @@ class AppContainer extends HTMLElement {
 
         data.forEach ((userSugget) => {
             const userSuggets = this.ownerDocument.createElement ("my-info") as Suggestions;
-            userSuggets.setAttribute(Info.pp,userSugget.pp);
+            userSuggets.setAttribute(Info.minipp,userSugget.minipp);
             userSuggets.setAttribute(Info.username,userSugget.username);
             userSuggets.setAttribute(Info.followed,userSugget.followed);
 
